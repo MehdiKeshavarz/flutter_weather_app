@@ -8,14 +8,13 @@ import 'locator.dart';
 void main() async {
   await setup();
   runApp(
-     MaterialApp(
-       debugShowCheckedModeBanner: false,
-      home:MultiBlocProvider(
-        providers: [
-          BlocProvider(create: (_) => locator<HomeBloc>()),
-        ],
-        child: MainWrapper(),
-      )
-    ),
+    MaterialApp(
+        debugShowCheckedModeBanner: true,
+        home: MultiBlocProvider(
+          providers: [
+            BlocProvider(create: (_) => locator<HomeBloc>()),
+          ],
+          child: MainWrapper(),
+        )),
   );
 }
