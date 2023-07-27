@@ -9,7 +9,7 @@ void main() async {
   await setup();
   runApp(
     MaterialApp(
-        debugShowCheckedModeBanner: true,
+        debugShowCheckedModeBanner: false,
         home: MultiBlocProvider(
           providers: [
             BlocProvider(create: (_) => locator<HomeBloc>()),
