@@ -9,7 +9,7 @@ class DotLoadingWidget extends StatelessWidget {
     return Center(
       child: LoadingAnimationWidget.inkDrop(
         size: 40,
-        color: Colors.amber,
+        color: Colors.res,
       ),
     );
   }
